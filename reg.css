@@ -46,6 +46,55 @@ body {
     letter-spacing: 2px;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 /* BUTTON */
 
 .btn {
@@ -65,7 +114,8 @@ body {
 
 .btn:hover {
     background: #b58e17;
-    transform: translateY(-2px);
+    transform: translateY(-2px)
+    translate(0.8s);
 }
 
 /* HERO */
@@ -80,7 +130,7 @@ body {
         rgba(0,0,0,.60)
     ),
 
-    url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=80");
+    url("hero.png");
 
     background-size: cover;
     background-position: center;
@@ -236,11 +286,39 @@ footer {
     .nav{
 
         padding:15px 5%;
+        flex-wrap: wrap;
     }
 
     .logo{
 
         font-size:18px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background: rgba(0,0,0,.95);
+        padding: 12px 5% 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255,255,255,.12);
     }
 
     .overlay h1{
