@@ -48,10 +48,10 @@ const navbar = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 50) {
-        navbar.style.background = "rgba(0,0,0,0.95)";
+        navbar.style.background = "rgba(31,31,31,0.98)";
         navbar.style.transition = "0.3s";
     } else {
-        navbar.style.background = "rgba(0,0,0,0.75)";
+        navbar.style.background = "rgba(31,31,31,0.94)";
     }
 
 });
@@ -97,6 +97,47 @@ document.querySelectorAll(".btn").forEach(btn => {
     });
 
 });
+
+// Brand logo fallbacks
+document.querySelectorAll(".brand-logo img").forEach(logo => {
+    if (logo.complete && logo.naturalWidth === 0) {
+        logo.closest(".brand-logo").classList.add("logo-missing");
+    }
+
+    logo.addEventListener("error", () => {
+        logo.closest(".brand-logo").classList.add("logo-missing");
+    });
+});
+
+// Customer service widget
+const supportWidget = document.querySelector(".support-widget");
+const supportToggle = document.querySelector(".support-toggle");
+const supportPanel = document.querySelector(".support-panel");
+const supportClose = document.querySelector(".support-close");
+
+function setSupportWidget(isOpen) {
+    if (!supportWidget || !supportToggle || !supportPanel) return;
+
+    supportWidget.classList.toggle("active", isOpen);
+    supportToggle.setAttribute("aria-expanded", String(isOpen));
+    supportPanel.setAttribute("aria-hidden", String(!isOpen));
+}
+
+if (supportWidget && supportToggle && supportPanel) {
+    supportToggle.addEventListener("click", () => {
+        setSupportWidget(!supportWidget.classList.contains("active"));
+    });
+
+    supportClose?.addEventListener("click", () => {
+        setSupportWidget(false);
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            setSupportWidget(false);
+        }
+    });
+}
 
 // Simple counter animation (for future statistics section)
 function animateCounter(counter, target) {

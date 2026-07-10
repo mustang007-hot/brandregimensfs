@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 130" role="img" aria-labelledby="title desc">
+<title id="title">Imperio logo</title>
+<desc id="desc">Imperio black wordmark with decorative flourishes.</desc>
+<rect width="320" height="130" fill="none"/>
+<text x="160" y="55" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#030303">IMPERIO</text>
+<path d="M78 68 H242" stroke="#030303" stroke-width="3"/>
+<path d="M101 82 C126 112 140 70 160 93 C180 70 194 112 219 82" fill="none" stroke="#030303" stroke-width="4" stroke-linecap="round"/>
+<path d="M128 88 C119 75 104 77 105 91 C106 106 130 100 122 86" fill="none" stroke="#030303" stroke-width="3" stroke-linecap="round"/>
+<path d="M192 88 C201 75 216 77 215 91 C214 106 190 100 198 86" fill="none" stroke="#030303" stroke-width="3" stroke-linecap="round"/>
+</svg>

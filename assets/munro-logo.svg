@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 130" role="img" aria-labelledby="title desc">
+<title id="title">Munro logo</title>
+<desc id="desc">Munro logo with red wordmark, blue oval and red star.</desc>
+<rect width="320" height="130" fill="none"/>
+<ellipse cx="170" cy="58" rx="112" ry="45" fill="none" stroke="#142a8f" stroke-width="8"/>
+<path d="M75 100 C115 124 220 122 263 92" fill="none" stroke="#142a8f" stroke-width="5" opacity=".75"/>
+<text x="170" y="66" text-anchor="middle" dominant-baseline="middle" font-family="Arial Black, Impact, sans-serif" font-size="42" font-weight="900" fill="#ef1d25" letter-spacing="3">MUNRO</text>
+<path d="M185 90 l7 15 17 2 -13 11 4 16 -15 -8 -15 8 4 -16 -13 -11 17 -2z" fill="#ef1d25"/>
+</svg>

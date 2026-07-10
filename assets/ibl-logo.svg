@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-labelledby="title desc">
+<title id="title">IBL logo</title>
+<desc id="desc">Imperial Beverages Limited IBL logo.</desc>
+<rect width="320" height="120" fill="none"/>
+<circle cx="78" cy="44" r="16" fill="#f3cf28"/>
+<circle cx="55" cy="59" r="9" fill="#f3cf28"/>
+<circle cx="80" cy="76" r="11" fill="#f3cf28"/>
+<text x="168" y="62" text-anchor="middle" dominant-baseline="middle" font-family="Arial Black, Impact, sans-serif" font-size="62" font-weight="900" fill="#ffffff">IBL</text>
+<text x="168" y="97" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing=".8">IMPERIAL BEVERAGES LIMITED</text>
+</svg>
