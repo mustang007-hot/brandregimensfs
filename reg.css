@@ -1,9 +1,9 @@
 /* ===========================
    BRAND REGIMEN SFS
-   Premium Landing Page Styles
+   Premium Landing Page css
 =========================== */
 
-/* RESET */
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: "Agency FB", "Agency FB Bold", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-family: "Arial", "Arial", "Arial Narrow", "Arial", "Helvetica", "sans-serif";
     background: #ffffff;
     color: #222;
     line-height: 1.6;
